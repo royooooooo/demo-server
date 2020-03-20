@@ -21,7 +21,6 @@ export class MomentService {
             "pic_url": "https://wx4.sinaimg.cn/wap180/4aff7849ly1gaj6mj2br8j20p00gokha.jpg"
         }]
     getMoments(request: IMomentsRequest) {
-
-        return this.data.slice(0, request.size);
+        return this.data.slice(0, request.size || 2);
     }
 }

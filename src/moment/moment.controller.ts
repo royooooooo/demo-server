@@ -1,4 +1,4 @@
-import { Controller, Get, Logger, Query } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import IMomentsRequest from 'src/reqeusts/MomentsRequest';
 import { MomentService } from './moment.service';
 
@@ -8,7 +8,6 @@ export class MomentController {
 
     @Get()
     getMoments(@Query() request: IMomentsRequest) {
-        Logger.log(request.page + "   " + request.size)
         return JSON.stringify(this.momentService.getMoments(request))
     }
 }

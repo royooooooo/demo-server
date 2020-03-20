@@ -1,5 +1,5 @@
 export default interface IMomentsRequest{
-    page: number;
-    size: number;
+    page?: number;
+    size?: number;
 }
 
