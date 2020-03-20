@@ -6,4 +6,4 @@ import { MomentService } from './moment.service';
   controllers: [MomentController],
   providers: [MomentService]
 })
-export class MomentModule {}
+export class MomentModule { }
