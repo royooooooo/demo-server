@@ -1,4 +1,4 @@
-import { Injectable, PipeTransform, BadRequestException, Logger } from '@nestjs/common';
+import { Injectable, PipeTransform } from '@nestjs/common';
 import IMomentsRequest from 'src/reqeusts/MomentsRequest';
 
 @Injectable()
